@@ -1,0 +1,21 @@
+group 'gp'
+version '1.0-SNAPSHOT'
+
+// this is actually a groovy language
+apply plugin: 'java'
+
+sourceSets {
+    main.java.srcDir "src/main"
+//    main.java.srcDir(src/main")
+//    main.java.srcDir "src/main"
+}
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
